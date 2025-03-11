@@ -1,0 +1,15 @@
+---
+description: Figma MCP Tools
+globs: 
+alwaysApply: false
+---
+
+# Figma MCP Tools
+
+- Always try to implement the result using ShadCN UI component (if any, prefer install ShadCN UI automatically using `bunx --bun shadcn@latest add [something]` command)
+- The default runtime is using `bun` or `bunx`
+- Use `cn` from [utils.ts](mdc:src/lib/utils.ts) if want to implement dynamic classes
+- Always make the generation result to be pixel perfect, but make the layout fluid and mobile first (responsive), don't forget to utilize container or max width too
+- Use placehold.co for dummy images
+- Alternative text title element cannot be empty
+- Avoid using the index of an array as key property in an element
