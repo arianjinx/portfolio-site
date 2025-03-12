@@ -15,18 +15,18 @@ export async function generateStaticParams() {
   }))
 }
 
-interface BlogPostPageProps {
-  params: {
+interface PageProps {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
-export default async function BlogPostPage({params}: BlogPostPageProps) {
-  const {slug} = params
+export default async function BlogPostPage({params}: PageProps) {
+  const {slug} = await params
 
   try {
     // Dynamically import the MDX file using Next.js's built-in MDX support
-    const BlogPost = (await import(`../../../content/${slug}.mdx`)).default
+    const BlogPost = (await import(`@/content/${slug}.mdx`)).default
 
     return (
       <div className="container mx-auto px-4 py-8">
