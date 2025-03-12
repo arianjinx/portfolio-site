@@ -21,6 +21,7 @@ export default function Navigation({className = ''}: NavigationProps) {
 
   const menuItems = [
     {name: 'About', href: '/about'},
+    {name: 'Blog', href: '/blog'},
     {name: 'Work', href: '/work'},
     {name: 'Contact', href: '/contact'},
   ]

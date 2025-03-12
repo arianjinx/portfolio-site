@@ -1,0 +1,62 @@
+---
+title: 'Getting Started with Next.js'
+date: '2023-12-15'
+excerpt:
+  "A beginner's guide to setting up and using Next.js for modern web
+  development."
+---
+
+# Getting Started with Next.js
+
+Next.js is a powerful React framework for building modern web applications. This
+guide will help you get started with Next.js development.
+
+## Why Next.js?
+
+Next.js offers several benefits that make it a popular choice for React
+developers:
+
+- **Server-Side Rendering (SSR)**: Improved performance and SEO
+- **Static Site Generation (SSG)**: Pre-render pages at build time
+- **Automatic Routing**: File-system based routing
+- **API Routes**: Built-in API endpoints
+- **Developer Experience**: Hot reloading, TypeScript support, and more
+
+## Setting Up a Next.js Project
+
+Get started with a new Next.js project by running:
+
+```bash
+npx create-next-app@latest my-app
+cd my-app
+npm run dev
+```
+
+## Basic Project Structure
+
+```
+my-app/
+├── app/              # App Router
+├── components/       # Reusable components
+├── lib/              # Utility functions
+├── public/           # Static assets
+├── next.config.js    # Next.js configuration
+└── package.json      # Project dependencies
+```
+
+## Creating a Simple Page
+
+```tsx
+// app/page.tsx
+export default function HomePage() {
+  return (
+    <div>
+      <h1>Welcome to Next.js!</h1>
+      <p>This is a simple Next.js page.</p>
+    </div>
+  )
+}
+```
+
+Next.js makes web development a breeze with its intuitive API and powerful
+features.
